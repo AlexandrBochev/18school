@@ -18,9 +18,24 @@ export const getTheme = async (): Promise<ITheme> => {
     groq`*[_type == "theme"][0] {
       _id,
       _createdAt,
-      "logo": logo.asset->url,
-      "horizontalLogo": horizontalLogo.asset->url,
-      "background": background.asset->url,
+      logo{
+        asset->{
+          url
+        },
+        alt
+      },
+      horizontalLogo{
+        asset->{
+          url
+        },
+        alt
+      },
+      background{
+        asset->{
+          url
+        },
+        alt
+      },
       footer,
     }`
   )

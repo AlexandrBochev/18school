@@ -5,11 +5,18 @@ export interface ISocial {
   url: string
 }
 
+export interface ImageField {
+  asset: {
+    url: string;
+  };
+  alt: string;
+}
+
 export interface ITheme {
   _id: string
   _createdAt: string
-  logo: string
-  horizontalLogo: string
-  background: string
+  logo: ImageField
+  horizontalLogo: ImageField
+  background: ImageField
   footer: string
 }

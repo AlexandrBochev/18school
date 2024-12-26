@@ -30,29 +30,29 @@ export default async function Home() {
     <div>
       <main
         className="
-          w-full h-[100vh] flex flex-col items-start
+          w-full h-svh flex flex-col items-start
           md:items-center justify-between p-8 pr-5 pb-2 relative
         "
       >
         <Image
-          src={theme.logo}
-          alt="18 school logo"
+          src={theme.logo.asset.url}
+          alt={theme.logo.alt}
           priority
-          width={100}
-          height={100}
+          width={80}
+          height={80}
           className="z-10 w-auto -rotate-18 md:hidden"
         />
         <Image
-          src={theme.horizontalLogo}
-          alt="18 school logo"
+          src={theme.horizontalLogo.asset.url}
+          alt={theme.horizontalLogo.alt}
           priority
-          width={400}
-          height={200}
+          width={300}
+          height={100}
           className="z-10 w-auto hidden md:block"
         />
         <Image
-          src={theme.background}
-          alt="Background"
+          src={theme.background.asset.url}
+          alt={theme.background.alt}
           priority
           fill
           className="w-auto absolute inset-0 object-cover"
