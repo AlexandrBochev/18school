@@ -19,6 +19,7 @@ export const getTheme = async (): Promise<ITheme> => {
       _id,
       _createdAt,
       "logo": logo.asset->url,
+      "horizontalLogo": horizontalLogo.asset->url,
       "background": background.asset->url,
       footer,
     }`

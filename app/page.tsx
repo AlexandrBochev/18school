@@ -31,16 +31,24 @@ export default async function Home() {
       <main
         className="
           w-full h-[100vh] flex flex-col items-start
-          md:items-center justify-between px-5 pt-8 pb-2 relative
+          md:items-center justify-between p-8 pr-5 pb-2 relative
         "
       >
         <Image
           src={theme.logo}
           alt="18 school logo"
           priority
-          width={160}
-          height={160}
-          className="z-10 w-auto -rotate-18"
+          width={100}
+          height={100}
+          className="z-10 w-auto -rotate-18 md:hidden"
+        />
+        <Image
+          src={theme.horizontalLogo}
+          alt="18 school logo"
+          priority
+          width={400}
+          height={200}
+          className="z-10 w-auto hidden md:block"
         />
         <Image
           src={theme.background}

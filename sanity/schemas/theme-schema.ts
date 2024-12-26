@@ -17,6 +17,19 @@ export const theme = {
       ],
     },
     {
+      name: 'horizontalLogo',
+      title: 'Horizontal Logo',
+      type: 'image',
+      options: { hotspot: true },
+      fields: [
+        {
+          name: 'alt',
+          title: 'Alternative text',
+          type: 'string',
+        },
+      ],
+    },
+    {
       name: 'background',
       title: 'Background',
       type: 'image',
