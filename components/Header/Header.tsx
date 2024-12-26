@@ -12,17 +12,17 @@ const Header = ({ theme }: HeaderProps) => {
         src={theme.logo.asset.url}
         alt={theme.logo.alt}
         priority
-        width={80}
-        height={80}
-        className="z-10 w-auto -rotate-18 md:hidden"
+        width={200}
+        height={200}
+        className="z-10 w-auto h-24 -rotate-18 md:hidden"
       />
       <Image
         src={theme.horizontalLogo.asset.url}
         alt={theme.horizontalLogo.alt}
         priority
         width={300}
-        height={100}
-        className="z-10 w-auto hidden md:block"
+        height={300}
+        className="z-10 w-72 h-auto hidden md:block"
       />
     </>
   )

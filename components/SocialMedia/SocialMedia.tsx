@@ -29,7 +29,7 @@ const SocialMedia = ({ socialMedia, footerContent }: SocialMediaProps) => {
     <div className="w-full flex flex-col items-center justify-center z-10">
       <div
         className="
-          w-full flex flex-col items-end justify-center gap-5 md:flex-row
+          w-full flex flex-col items-end justify-center gap-4 md:flex-row
         "
       >
         {socialMedia.map(social => (

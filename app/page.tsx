@@ -13,7 +13,7 @@ export default async function Home() {
       <main
         className="
           w-full h-svh flex flex-col items-start
-          md:items-center justify-between p-8 pr-5 pb-2 relative
+          md:items-center justify-between p-6 pr-5 pb-2 relative
         "
       >
         <Header theme={theme} />
