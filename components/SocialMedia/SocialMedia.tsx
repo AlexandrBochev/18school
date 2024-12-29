@@ -47,7 +47,7 @@ const SocialMedia = ({ socialMedia, footerContent }: SocialMediaProps) => {
           </Link>
         ))}
       </div>
-      <p className="text-xs text-white mt-2">{footerContent}</p>
+      <p className="text-xs text-primary mt-2">{footerContent}</p>
     </div>
   )
 }
