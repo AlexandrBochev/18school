@@ -43,6 +43,19 @@ export const theme = {
       ],
     },
     {
+      name: 'horizontalBackground',
+      title: 'Horizontal Background',
+      type: 'image',
+      options: { hotspot: true },
+      fields: [
+        {
+          name: 'alt',
+          title: 'Alternative text',
+          type: 'string',
+        },
+      ],
+    },
+    {
       name: 'footer',
       title: 'Footer',
       type: 'string',

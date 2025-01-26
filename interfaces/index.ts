@@ -18,5 +18,6 @@ export interface ITheme {
   logo: ImageField
   horizontalLogo: ImageField
   background: ImageField
+  horizontalBackground: ImageField
   footer: string
 }

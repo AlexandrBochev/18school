@@ -36,6 +36,12 @@ export const getTheme = async (): Promise<ITheme> => {
         },
         alt
       },
+      horizontalBackground{
+        asset->{
+          url
+        },
+        alt
+      },
       footer,
     }`
   )

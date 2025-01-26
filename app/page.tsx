@@ -1,8 +1,8 @@
-import Image from "next/image";
 import { getSocial, getTheme } from "@/sanity/sanity-utils";
 import { ISocial, ITheme } from "@/interfaces";
 import { Header } from "@/components/Header/Header";
 import { SocialMedia } from "@/components/SocialMedia/SocialMedia";
+import { Background } from "@/components/Background/Background";
 
 export default async function Home() {
   const socialMedia: ISocial[] = await getSocial();
@@ -12,19 +12,17 @@ export default async function Home() {
     <div>
       <main
         className="
-          w-full h-svh flex flex-col items-start
-          md:items-center justify-between p-6 pr-5 pb-2 relative
+          w-full h-dvh relative px-5 py-8 overflow-hidden
+          flex flex-col items-center justify-between
+          md:p-12
         "
       >
         <Header theme={theme} />
-        <SocialMedia socialMedia={socialMedia} footerContent={theme.footer} />
-        <Image
-          src={theme.background.asset.url}
-          alt={theme.background.alt}
-          priority
-          fill
-          className="w-auto absolute inset-0 object-cover"
-        />
+        <SocialMedia socialMedia={socialMedia} />
+        <Background theme={theme} />
+        <footer className="w-full">
+          <p className="text-xs text-primary md:text-center">{theme.footer}</p>
+        </footer>
       </main>
     </div>
   );
